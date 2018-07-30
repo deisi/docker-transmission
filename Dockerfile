@@ -25,6 +25,9 @@ RUN \
 # copy local files
 COPY root/ /
 
+# copy set_routes script
+COPY set_routes.sh /root/set_routes.sh
+
 # ports and volumes
 EXPOSE 9091 51413
 VOLUME /config /downloads /watch
